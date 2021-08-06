@@ -1,0 +1,58 @@
+.card {
+    padding: 2rem;
+    &__content {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 1.5rem;
+        overflow: hidden;
+    }
+    &__img {
+        overflow: hidden;
+        img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+    }
+    &__info {
+        padding: 1rem 0;
+    }
+    &__title {
+        padding: 1rem;
+        border-bottom: 1px solid grey;
+        h1 {
+            font-size: 1.5rem;
+            padding: 10px 0;
+            font-weight: 600;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+        }
+    }
+    &__text {
+        p {
+            color: grey;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+        }
+    }
+    &__footer {
+        padding: 0 1rem;
+        background-color: greenyellow;
+        width: 70%;
+        border-radius: 5px;
+        margin-top: auto;
+        p {
+            font-size: 15px;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+}
